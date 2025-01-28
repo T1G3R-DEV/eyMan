@@ -1,6 +1,6 @@
 
 cmake_minimum_required(VERSION 3.30.0)
-project(eyMan)
+project(eyMate)
 
 set( DUSE_SSE2_INSTRUCTIONS ON)
 set( DUSE_SSE4_INSTRUCTIONS ON)
@@ -24,6 +24,6 @@ FetchContent_MakeAvailable(opencv)
 set(OpenCV_DIR ${CMAKE_CURRENT_BINARY_DIR})
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-add_executable(eyMan ./src/main.cpp)
+add_executable(eyMate ./src/main.cpp)
 
-target_link_libraries(eyMan dlib::dlib ${OpenCV_LIBS})
+target_link_libraries(eyMate dlib::dlib ${OpenCV_LIBS})
